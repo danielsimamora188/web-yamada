@@ -1,12 +1,14 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #3e65da;
 }
 
 .container{
     position: relative;
     margin-top: 100px;
     margin-left: 50px;
+    margin-bottom: 150px;
 }
 
 
@@ -19,7 +21,7 @@ nav{
     top: 0;
     font-family: sans-serif;
     padding: 0 5%;
-    height: 70px;
+    height: 100px;
     background-color: #3e65da;
 }
 
@@ -40,6 +42,7 @@ nav .links{
     width: 30%;
     height: 100%;
     display: flex;
+    letter-spacing: 2px;
     justify-content: space-around;
     align-items: center;
 }
@@ -55,6 +58,11 @@ nav .links a{
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+}
+
+nav ul li:hover{
+    border-bottom: 3px solid #000000;
+    transition: all .3s ease;
 }
 
 #nav-toggle{
@@ -78,24 +86,137 @@ nav .icon-burger .line{
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
+
 /* End navbar style */
 
 
 
+/* Content Style */
+.content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1{
+    color: #fff;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.content span{
+    color: #000000;
+}
+
+.content-header{
+    text-align: center;
+    margin: 10px;
+}
+
+.content-header p{
+    color: #EEEEEE;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.gambar{
+    margin: 100px;
+    width: 40%;
+}
+/* End Content Style */
+
+/* Footer Style */
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 10px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-left: 0px;
+}
+
+.socials li{
+    margin: 0 20px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials li a img{
+    width: 40px;
+}
+
+.socials li a:hover img{
+    width: 45px;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    font-weight: bold;
+}
+/* End Footer Style  */
 
 
-
-
-
-
-
-
-
-
-
-
-/*Style Navbar Responisve */
+/*Style Responisve */
 @media screen and (max-width: 768px) {
+    /* Navbar */
     nav .logo{
         float: none;
         width: auto;
@@ -142,5 +263,21 @@ nav .icon-burger .line{
     nav :checked ~ .icon-burger .line:nth-child(2){
         opacity: 0;
     }
+    /* end Navbar */
 
+
+    /* Content */
+    .content{
+        text-align: center;
+        position: relative;
+        margin: 20% 0 0 0;
+        left: 45%;
+    }
+
+    .gambar{
+        margin: 5%;
+        width: 85%;
+    }
+    /* End Content */
+    
 }
