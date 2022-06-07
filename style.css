@@ -11,6 +11,12 @@ body{
     margin-bottom: 150px;
 }
 
+.judul{
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffff;
+    font-size: 28px;
+}
 
 /* navbar style */
 nav{
@@ -87,6 +93,10 @@ nav .icon-burger .line{
     transition: all .3s ease-in-out;
 }
 
+nav .icon-burger:hover{
+    cursor: pointer;
+}
+
 /* End navbar style */
 
 
@@ -131,7 +141,6 @@ nav .icon-burger .line{
 }
 /* End Content Style */
 
-
 /* Form Card Style  */
 .section-card{
     display: grid;
@@ -139,7 +148,7 @@ nav .icon-burger .line{
     column-gap: 48px;
     font-family: sans-serif;
     width: 90%;
-    margin: 60px auto;
+    margin: 40px auto;
 }
 
 .card{
@@ -152,6 +161,11 @@ nav .icon-burger .line{
     width: 100%;
     display: block;
     background-color: rgb(201, 3, 3);
+}
+
+.card-img:hover{
+    background-color: #fff;
+    transition: all .3s;
 }
 
 .card-detail{
@@ -169,7 +183,7 @@ nav .icon-burger .line{
 .card-detail ul li{
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px 0;
 }
 
@@ -313,6 +327,11 @@ nav .icon-burger .line{
     margin-bottom: 30px;
 }
 
+.card-1 .btn:hover{
+    font-weight: bold;
+    background-color: rgb(244, 33, 33);
+}
+
 .card-1 .btn{
     background-color: rgb(201, 3, 3);
 }
@@ -378,8 +397,37 @@ footer{
     width: 40px;
 }
 
-.socials li a:hover img{
-    width: 45px;
+.facebook {
+    background-image: url(img/facebook-icon.png);
+    background-size: 100%;
+    padding: 20px;
+}
+
+.socials li a .facebook:hover{
+    background-image: url(img/facebook-icon-color.png);
+    transition: all .2s;
+}
+
+.instagram {
+    background-image: url(img/instagram-icon.png);
+    background-size: 100%;
+    padding: 20px;
+}
+
+.socials li a .instagram:hover{
+    background-image: url(img/instagram-icon-color.png);
+    transition: all .2s;
+}
+
+.email {
+    background-image: url(img/email-icon.png);
+    background-size: 100%;
+    padding: 20px;
+}
+
+.socials li a .email:hover{
+    background-image: url(img/email-icon-color.png);
+    transition: all .2s;
 }
 
 .footer-bottom{
@@ -455,17 +503,42 @@ footer{
     }
     /* end Navbar */
 
+    .footer-content p{
+        margin: 30px;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .judul{
+        text-align: center;
+        font-family: sans-serif;
+        color: #ffff;
+        font-size: 28px;
+        padding-top: 100px;
+    }
+
 
     /* Content */
     .content{
         text-align: center;
         position: relative;
-        margin: 20% 0 0 0;
         left: 45%;
+    }
+
+    .content h1{
+        margin: 180px 20% 20% 30%;
+    }
+
+    .content-header p{
+        margin-left: 40px;
     }
 
     .gambar{
         margin: 5%;
+        margin-top: 30%;
         width: 85%;
     }
     /* End Content */
@@ -475,11 +548,12 @@ footer{
     /* Daftar Motor */
     .section-card{
         display: block;
-        width: 400px;
+        width: 60%;
         
     }
     .card{
-        margin: 50px;
+        margin-bottom: 50px;
+        padding: 0;
     }
     /* End Daftar Motor */
 
