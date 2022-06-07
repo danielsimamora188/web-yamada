@@ -7,11 +7,19 @@ body{
 .container{
     position: relative;
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-bottom: 150px;
 }
 
 .judul{
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffff;
+    font-size: 24px;
+}
+
+
+.judul-2{
     text-align: center;
     font-family: sans-serif;
     color: #ffff;
@@ -141,7 +149,8 @@ nav .icon-burger:hover{
 }
 /* End Content Style */
 
-/* Form Card Style  */
+
+/* Form card (gambar motor)  Style  */
 .section-card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,16 +164,18 @@ nav .icon-burger:hover{
     background-color: #fff;
     box-shadow: 0 20px 40px rgba(0, 0,0,.2);
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .card-img{
     width: 100%;
     display: block;
-    background-color: rgb(201, 3, 3);
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .card-img:hover{
-    background-color: #fff;
+    background-color: #3e65da;
     transition: all .3s;
 }
 
@@ -190,6 +201,7 @@ nav .icon-burger:hover{
 .card-detail ul li:not(:last-child){
     border-bottom: 1px solid #bbb;
 }
+
 
 /* popup */
 .popup{
@@ -308,8 +320,8 @@ nav .icon-burger:hover{
 .popup-close:hover,
 .popup-close:visited{
     color: #555;
-
 }
+/* End Popup Stye */
 
 /* Tombol */
 .btn{
@@ -328,15 +340,151 @@ nav .icon-burger:hover{
 }
 
 .card-1 .btn:hover{
-    font-weight: bold;
-    background-color: rgb(244, 33, 33);
+    background-color: rgb(91, 147, 237);
+    transition: all .3s;
 }
 
 .card-1 .btn{
-    background-color: rgb(201, 3, 3);
+    background-color: #3e65da;
+}
+/* End tombol Style  */
+
+
+
+/* Form Style */
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+.container-form{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0,0,0.25), 0 10px 10px rgba(0, 0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 522px;
+    min-width: 370px;
 }
 
-/* End Form Card Style  */
+.card-container{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+    height: 622px;
+    background-color: #3e65da;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.left p{
+    font-size: 0.9rem;  
+}
+
+.left-container{
+    width: 70%;
+    text-align: center;
+    line-height: 22px;
+}
+
+.left-container h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.left-container img{
+    width: 50%;
+}
+
+.left-container p{
+    font-weight: lighter;
+}
+
+.right{
+    display: flex;
+    flex: 1;
+    height: 622px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container{
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+.right-container label{
+    border: none;
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+.right-container select{
+    padding: 12px 8px;
+    color: #555;
+    margin: 8px 0;
+    width: 110%;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+.container-form input,
+textarea{
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+.warna-klasifikasi{
+    display: flex;
+    margin: 10px;
+}
+
+.warna-klasifikasi label{
+    color: #555;
+}
+
+.warna-klasifikasi input{
+    margin-top: 2px;
+}
+
+input:focus,
+textarea:focus{
+    outline: 1px solid #3e65da;
+}
+
+.right-container button{
+    border-radius: 20px;
+    border: 1px solid #3e65da;
+    background-color: #3e65da;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+}
+
+.right-container button:hover{
+    opacity: 0.7;
+}
+/* End Form Style */
+
 
 
 
@@ -452,7 +600,9 @@ footer{
 /* End Footer Style  */
 
 
-/*Style Responisve */
+
+
+/*Style Responisve UNTUK UKURAN KECIL */
 @media screen and (max-width: 768px) {
     /* Navbar */
     nav .logo{
@@ -503,10 +653,12 @@ footer{
     }
     /* end Navbar */
 
+    /* Footer Style */
     .footer-content p{
         margin: 30px;
     }
-
+    /* End Footer Style */
+    
     .container{
         margin: 0;
         padding: 0;
@@ -573,4 +725,22 @@ footer{
         font-size: 12px;
     }
     /* End Popup */
+
+
+
+    /* Form */
+    .form{
+        display: block;
+        margin: 20px;
+        height: 100%;
+    }
+
+    .card-container{
+        display: block;
+    }
+
+    .left{
+        height: 400px;
+    }
+    /* End Form */
 }
