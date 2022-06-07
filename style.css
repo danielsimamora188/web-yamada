@@ -413,7 +413,7 @@ nav .icon-burger:hover{
 .right{
     display: flex;
     flex: 1;
-    height: 622px;
+    height: 422px;
     background-color: #fff;
     justify-content: center;
     align-items: center;
@@ -741,6 +741,10 @@ footer{
 
     .left{
         height: 400px;
+    }
+
+    .right{
+        height: 622px;
     }
     /* End Form */
 }
